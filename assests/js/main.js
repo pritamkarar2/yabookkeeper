@@ -13,24 +13,24 @@ function myFunction() {
 }
 
 // Back to top 
-window.onscroll = function() {scrollToTop()};
+// window.onscroll = function() {scrollToTop()};
 
-var body = document.getElementsByName('body')
+// var body = document.getElementsByName('body')
 
-function scrollToTop() {
-  if(window.scrollTop > 200){
-    body.classList.add()
-  }
-  //Scroll event
-  $(window).scroll(function(){
-    var scrolled = $(window).scrollTop();
-    if (scrolled > 200) $('.go-top').fadeIn('slow');
-    if (scrolled < 200) $('.go-top').fadeOut('slow');
-  });
+// function scrollToTop() {
+//   if(window.scrollTop > 200){
+//     body.classList.add("go-top  ")
+//   }
+//   //Scroll event
+//   $(window).scroll(function(){
+//     var scrolled = $(window).scrollTop();
+//     if (scrolled > 200) $('.go-top').fadeIn('slow');
+//     if (scrolled < 200) $('.go-top').fadeOut('slow');
+//   });
   
-  //Click event
-  $('.go-top').click(function () {
-    $("html, body").animate({ scrollTop: "0" },  500);
-  });
+//   //Click event
+//   $('.go-top').click(function () {
+//     $("html, body").animate({ scrollTop: "0" },  500);
+//   });
 
-});
+// });
