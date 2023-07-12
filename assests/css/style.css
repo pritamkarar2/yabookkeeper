@@ -19,6 +19,9 @@ ul{
     padding: 0;
     list-style: none;
 }
+figure{
+    margin: 0;
+}
 section{
     padding: 80px 0;
 }
@@ -63,7 +66,7 @@ section{
     font-weight: 500;
     position: relative;
 }
-.navbar-nav .nav-item .nav-link::before{
+/* .navbar-nav .nav-item .nav-link::before{
     position: absolute;
     content: "";
     margin: 0 auto;
@@ -75,17 +78,17 @@ section{
     bottom: 0;
     pointer-events: none;
     background-color:#ad641d;
-}
-.navbar-nav .nav-item .nav-link:hover::before{
+} */
+/* .navbar-nav .nav-item .nav-link:hover::before{
     width: 100%;
-}
-.navbar-nav .nav-item:hover .nav-link{
+} */
+/* .navbar-nav .nav-item:hover .nav-link{
     color: #ad641d;
 }
 .navbar-nav .nav-item .nav-link.active{
     color: #ad641d;
     font-weight: 700;
-}
+} */
 .center{
     display: flex;
     align-items: center;
@@ -122,20 +125,20 @@ figure figcaption h3 {
     line-height: 30px;
     letter-spacing: 1px;
 }
-figure figcaption p{
+/* figure figcaption p {
     line-height: 30px;
     letter-spacing: 1px;
-    height: 120px;
-}
+    min-height: 120px;
+} */
 figure{
     padding: 20px;
     transition: 0.3s ease-in-out;
     border-radius: 10px;
 }
-figure:hover{
+/* figure:hover{
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     box-shadow: rgba(17, 12, 46, 0.15) 13px 15px 10px 6px;
-}
+} */
 .keepBooking{
     background-color: #ededed;
 }
@@ -179,16 +182,16 @@ figure:hover{
     transform: scale(1);
     transition: all ease-in-out 0.3s;
 }
-.team figure:hover{
+/* .team figure:hover{
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;    
-}
-.team figure:hover h3{
+} */
+/* .team figure:hover h3{
     font-size: 22px;
 }
 
 .team figure:hover .feature-image img{
     transform: scale(1.2);
-}
+} */
 footer{
     background-color: #14171c;
 }
@@ -313,14 +316,14 @@ footer{
     cursor: pointer;
     border-radius: 10px;
 }
-.founder-team:hover{
+/* .founder-team:hover{
     background-color:#fff;
     box-shadow: rgba(17, 12, 46, 0.15) 12px 11px 4px 7px;
-}
-.founder-team:hover ul{
+} */
+/* .founder-team:hover ul{
     opacity: 1;
     bottom: 20%;
-}
+} */
 .founder-team h2 {
     font-size: 24px;
 }
@@ -374,6 +377,7 @@ footer{
 .feature .f-image img{
     min-height: 450px;
     width: 100%;
+    object-fit: fill;
 }
 .feature .f-image{
     position: relative;
@@ -406,10 +410,10 @@ footer{
     transform: translate(-50%, -50%);
     transition: all ease-in-out 0.5s;
 }
-.feature .col-lg-4:hover .button{
+/* .feature .col-lg-4:hover .button{
     opacity: 1;
     top: 80%;
-}
+} */
 .point-details{
     width: 100%;
     max-width: 400px;
@@ -429,11 +433,11 @@ footer{
     padding: 55px;
     transition: all ease-in-out 0.58s;
 }
-.contact-from:hover{
+/* .contact-from:hover{
     box-shadow: rgba(17, 12, 46, 0.15) 0px 0 15px 10px;
     background-color: #fff;
     border-radius: 15px;
-}
+} */
 section.contact-us {
     background-color: #ededed;
 }
