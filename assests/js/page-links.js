@@ -1,4 +1,4 @@
-var pages = {
+const pageList = {
     "": "Home",
     "about": "About",
     "service": "Services",
@@ -6,14 +6,11 @@ var pages = {
     "contact": "Contact Us"
 };
 
-var host = window.location;
-var isProduction = (host.hostname != '127.0.0.1' && host.hostname != 'localhost' && host.hostname != '0.0.0.0');
-var page = '';
-$.each(pages, function (key, val) {
-    var isActive = (host.pathname == ('/' + key));
-    page += `<li class="nav-item"><a class="nav-link` + (isActive ? ' active" aria-current="page"' : '"') + ` href="./` + key + ((isProduction || val == "Home") ? '' : '.html') + `">` + val + `</a></li>`;
+const host = window.location; const hostname = host.hostname;
+const isProduction = (hostname != '127.0.0.1' && hostname != 'localhost' && hostname != '0.0.0.0');
+let pages = '';
+$.each(pageList, function (slug, name) {
+    const isActive = (host.pathname == ('/' + slug));
+    pages += `<li class="nav-item"><a class="nav-link` + (isActive ? ' active" aria-current="page"' : '"') + ` href="./` + slug + ((isProduction || name == "Home") ? '' : '.html') + `">` + name + `</a></li>`;
 });
-
-var pageLinks = `<ul class="navbar-nav ms-auto">` + page + `</ul>`;
-var nav = document.getElementById("navbarNav");
-nav.innerHTML = pageLinks;
+document.getElementById("navbarNav").innerHTML = `<ul class="navbar-nav ms-auto">` + pages + `</ul>`;
