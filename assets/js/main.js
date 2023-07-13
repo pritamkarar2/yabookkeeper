@@ -1,4 +1,4 @@
-require("assests/js/page-links.js");
+require("assets/js/page-links.js");
 
 let mybutton = document.getElementById("myBtn");
 

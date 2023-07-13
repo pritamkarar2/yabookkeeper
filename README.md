@@ -1,5 +1,5 @@
 
-![Logo](https://yabookkeeper.com/assests/images/cropped-Final-Logo.png)
+![Logo](https://yabookkeeper.com/assets/images/cropped-Final-Logo.png)
 
 
 # Your Actual Bookkeeper - Website
