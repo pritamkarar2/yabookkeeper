@@ -1,6 +1,6 @@
 const pageList = {
     "": "Home",
-    "about": "About",
+    "about": "About Us",
     "service": "Services",
     "solution": "Solutions",
     "contact": "Contact Us"
