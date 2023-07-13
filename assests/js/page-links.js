@@ -7,8 +7,6 @@ var pages = {
 };
 
 var host = window.location;
-console.log(host.pathname);
-
 var isProduction = (host.hostname != '127.0.0.1' && host.hostname != 'localhost' && host.hostname != '0.0.0.0');
 var page = '';
 $.each(pages, function (key, val) {
