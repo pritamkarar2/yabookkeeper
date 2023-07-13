@@ -1,3 +1,5 @@
+@import "./cookieconsent.min.css";
+
 *{
     padding: 0;
     margin: 0;
@@ -69,29 +71,6 @@ section{
     font-weight: 500;
     position: relative;
 }
-/* .navbar-nav .nav-item .nav-link::before{
-    position: absolute;
-    content: "";
-    margin: 0 auto;
-    width: 0;
-    height: 2px;
-    transition: all .3s ease;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    pointer-events: none;
-    background-color:#ad641d;
-} */
-/* .navbar-nav .nav-item .nav-link:hover::before{
-    width: 100%;
-} */
-/* .navbar-nav .nav-item:hover .nav-link{
-    color: #ad641d;
-}
-.navbar-nav .nav-item .nav-link.active{
-    color: #ad641d;
-    font-weight: 700;
-} */
 .center{
     display: flex;
     align-items: center;
@@ -107,10 +86,11 @@ section{
     background-repeat: no-repeat;
 }
 .banner h1.text-white{
-    font-size: 55px;
+    font-size: 80px;
     margin-bottom: 20px;
 }
 .banner p.text-white{
+    font-size: 20px;
     margin-bottom: 20px;
 }
 figure{

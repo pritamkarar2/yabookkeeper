@@ -1,4 +1,5 @@
 require("assets/js/page-links.js");
+require("assets/js/cookieconsent-init.js");
 
 let mybutton = document.getElementById("myBtn");
 
@@ -41,3 +42,13 @@ function require(script) {
       }
   });
 }
+
+$(document).ready(function() {
+  
+  $(".banner").css({'background-position-y' : ($(window).scrollTop()/20)+'%'});
+  
+  $(window).scroll(function() {
+    $(".banner").css({'background-position-y' : ($(window).scrollTop()/20)+'%'});    
+  });
+  
+});
