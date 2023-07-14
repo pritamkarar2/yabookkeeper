@@ -28,7 +28,8 @@
     console.log('"analytics" category accepted');
   </script>
   <script defer src="./assets/js/page-links.js"></script>
-  <script async src="./assets/js/manage-meta.js"></script>
+  <script src="./assets/js/manage-meta.js"></script>
+  <script>document.write(meta_data)</script>
 </head>
 
 <body>
@@ -245,7 +246,7 @@
         </div>
       </div>
       <div class="copyright">
-        <p>&copy; Your Actual Bookkeeper</p>
+        <p>&copy; <script>document.write(new Date().getFullYear())</script> - Your Actual Bookkeeper</p>
       </div>
     </div>
     </div>
