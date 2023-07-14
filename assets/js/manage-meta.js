@@ -6,7 +6,7 @@ const metaList = {
 const host = window.location; const hostname = host.hostname;
 const isProduction = (hostname != '127.0.0.1' && hostname != 'localhost' && hostname != '0.0.0.0');
 var meta_data = '';
-if (!isProduction) {
+if (isProduction) {
     Object.keys(metaList).map(function (name) {
         var meta = `<meta name="` + name + `" content="` + metaList[name] + `">`;
         meta_data += meta;
