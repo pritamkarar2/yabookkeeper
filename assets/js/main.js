@@ -29,7 +29,7 @@ $(document).ready(function() {
   
   $(window).scroll(function() {
     onScroll();
-    $(".banner").css({'background-position-y' : ($(window).scrollTop()/20)+'%'});    
+    $(".banner").css({'background-position-y' : ($(window).scrollTop()/10)+'%'});    
   });
   
 });

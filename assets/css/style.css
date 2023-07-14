@@ -5,28 +5,35 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body{
     font-family: 'Roboto', sans-serif;
     position: relative;
     color: #2b2b2b;
 }
+
 a{
     text-decoration: none;
 }
+
 h1,h2,h3,h4,h5,h6,p{
     margin: 0;
 }
+
 ul{
     margin: 0;
     padding: 0;
     list-style: none;
 }
+
 figure{
     margin: 0;
 }
+
 section{
     padding: 80px 0;
 }
+
 .btn_1{
     background-color: #fcaf3b;
     padding: 12px 30px;
@@ -38,6 +45,7 @@ section{
     font-weight: 500;
     transition: all ease-in-out 0.3s;
 }
+
 .btn_2{
     background-color: #ad641d;
     padding: 12px 30px;
@@ -50,20 +58,25 @@ section{
     transition: all ease-in-out 0.3s;
     border: none;
 }
+
 .btn_2:disabled {
     background-color: #bda288;
 }
+
 .btn_1:hover,
 .btn_1:focus {
   box-shadow: 0 0.5em 0.5em -0.4em #ad641d;
   transform: translateY(-0.25em);
 }
+
 .logo {
     width: 200px;
 }
+
 .navbar-nav .nav-item:not(:last-of-type){    
     padding-right: 15px;
 }
+
 .navbar-nav .nav-item .nav-link{
     font-size: 18px;
     text-transform: uppercase;
@@ -71,11 +84,13 @@ section{
     font-weight: 500;
     position: relative;
 }
+
 .center{
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .banner{
     background-image: radial-gradient(
     rgba(0, 0, 0, 0.5),
@@ -85,29 +100,35 @@ section{
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .banner h1.text-white{
     font-size: 80px;
     margin-bottom: 20px;
 }
+
 .banner p.text-white{
     font-size: 20px;
     margin-bottom: 20px;
 }
+
 figure{
     cursor: pointer;
 }
+
 .feature-image {
     height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 figure figcaption h3 {
     margin: 20px 0;
     font-size: 28px;
     line-height: 30px;
     letter-spacing: 1px;
 }
+
 /* figure figcaption p {
     line-height: 30px;
     letter-spacing: 1px;
@@ -118,6 +139,7 @@ figure{
     transition: 0.3s ease-in-out;
     border-radius: 10px;
 }
+
 /* figure:hover{
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     box-shadow: rgba(17, 12, 46, 0.15) 13px 15px 10px 6px;
@@ -125,15 +147,18 @@ figure{
 .keepBooking{
     background-color: #ededed;
 }
+
 .keepBooking h2{
     font-size: 46px;
     color: #2b2b2b;
     margin-bottom: 30px;
     font-weight: 600;
 }
+
 .keepBooking p{
     line-height: 30px;
 }
+
 .service{
     background-color: #14171c;
 }
@@ -147,17 +172,20 @@ figure{
     margin: 20px 0;
     height: 100px;
 }
+
 .team h3{
     font-size: 16px;
     margin: 0;
     transition: all ease-in-out 0.3s;
 }
+
 .team .feature-image {
     height: 100px;
     width: 100px;
     overflow: hidden;
     border-radius: 50%;
 }
+
 .team .feature-image img{
     height: 100%;
     width: 100%;
@@ -165,6 +193,7 @@ figure{
     transform: scale(1);
     transition: all ease-in-out 0.3s;
 }
+
 /* .team figure:hover{
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;    
 } */
@@ -178,27 +207,32 @@ figure{
 footer{
     background-color: #14171c;
 }
+
 .footer{
     min-height: 45vh;
     text-align: center;
     padding-bottom: 50px;
     flex-direction: column;
 }
+
 .footer h2.text-white {
     font-size: 48px;
     margin-bottom: 20px;
 }
+
 .copyright {
     padding: 20px 0;
     color: #fff;
     font-weight: 300;
 }
+
 .copyright p{    
     position: relative;
     width: max-content;
     padding-top: 1px;
     cursor: grab;
 }
+
 .copyright p::before{
     content: '';
     position: absolute;
@@ -208,6 +242,7 @@ footer{
     top: -10;
     transition: all ease-in-out 0.3s;
 }
+
 .copyright p:hover::before{
     width: 100%;
 }
@@ -222,6 +257,7 @@ footer{
     box-shadow: rgba(12, 59, 21, 0.16) 0px 1px 4px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 10px;
 }
+
 #myBtn {
     display: none;
     position: fixed;
@@ -237,30 +273,35 @@ footer{
     padding: 15px;
     border-radius: 4px;
     transition: all ease-in-out 0.5s;
-  }
+}
   
   #myBtn:hover {
     background-color: #555;
-  }
+}
 
 .other-banner{
     padding-bottom: 130px;
 }
+
 .keepBooking .font {
     font-size: 20px;
     margin-bottom: 20px;
 }
-  .other-banner h1{
+
+.other-banner h1{
     font-size: 76px;
     color: #2b2b2b;
     /* color: #fff; */
-  }
-  .about figure{
+}
+
+.about figure{
     padding: 40px 20px;
-  }
-  .founder-team{
+}
+
+.founder-team{
     position: relative;
-  }
+}
+
 .social-icons ul{
     display: flex;
     justify-content: center;    
@@ -271,9 +312,11 @@ footer{
     left: 50%;
     transform: translateX(-50%);
 }
+
 .social-icons ul li:not(:last-of-type){
     margin-right: 15px;
 }
+
 .social-icons ul li a{
     height: 35px;
     width: 35px;
@@ -286,6 +329,7 @@ footer{
     color: #fff;
     position: relative;
 }
+
 .founder-team {
     height: 250px;
     display: flex;
@@ -299,6 +343,7 @@ footer{
     cursor: pointer;
     border-radius: 10px;
 }
+
 /* .founder-team:hover{
     background-color:#fff;
     box-shadow: rgba(17, 12, 46, 0.15) 12px 11px 4px 7px;
@@ -310,36 +355,45 @@ footer{
 .founder-team h2 {
     font-size: 24px;
 }
+
 .founder-team p{
     margin: 15px 0;
 }
+
 .founder{
     background-color: #ededed;
 }
+
 .height{
     height: 65px;
 }
+
 .details h3{
     font-size: 24px;
 }
+
 .details p{
     width: 80%;        
     margin: 15px auto;
     line-height: 30px;
 }
+
 .testimonial{
     background-color: #14171c;
 }
+
 .testimonial h5{
     font-size: 16px;
     font-weight: 400;
     color: #fff;
     margin-bottom: 50px;
 }
+
 .testimonial p{
     color: #fff;
     font-size: 14px;
 }
+
 .solution{
     background-image: radial-gradient(
         rgb(179 179 179 / 50%),
@@ -350,6 +404,7 @@ footer{
     height: 600px;
     padding-bottom: 80px;
 }
+
 .solution p{
     font-size: 22px;
     color: #fff;
@@ -362,9 +417,11 @@ footer{
     width: 100%;
     object-fit: fill;
 }
+
 .feature .f-image{
     position: relative;
 }
+
 .feature .f-image::before{
     content: '';
     bottom: 0;
@@ -393,6 +450,7 @@ footer{
     transform: translate(-50%, -50%);
     transition: all ease-in-out 0.5s;
 }
+
 /* .feature .col-lg-4:hover .button{
     opacity: 1;
     top: 80%;
@@ -405,17 +463,21 @@ footer{
     border-top: 2px solid #2b2b2b;
     padding-top: 52px;
 }
+
 .point-details p {
     line-height: 30px;
     margin-bottom: 30px;
 }
+
 .point{
     background-color: #ededed;
 }
+
 .contact-from {
     padding: 55px;
     transition: all ease-in-out 0.58s;
 }
+
 /* .contact-from:hover{
     box-shadow: rgba(17, 12, 46, 0.15) 0px 0 15px 10px;
     background-color: #fff;
@@ -424,16 +486,19 @@ footer{
 section.contact-us {
     background-color: #ededed;
 }
+
 .contact-from h3{
     font-size: 36px;
     text-align: center;
     margin-bottom: 30px;
 }
+
 .form-section h4{
     margin-bottom: 15px;
     font-size: 22px;
     font-weight: 600;
 }
+
 .form-section .from-control,
 .form-section textarea {
     margin-bottom: 15px;
@@ -442,6 +507,7 @@ section.contact-us {
     background-color: transparent;
     border-bottom: 1px solid #ccc;
 }
+
 .form-section .col-lg-6{
     padding: 30px;
 }
@@ -449,27 +515,32 @@ section.contact-us {
 .social-details li:not(:last-of-type){
     margin-bottom: 25px;
 }
+
 .social-details li a strong {
     min-width: 55px;
     display: inline-block;
 }
+
 .social-details li a span {
     min-width: 30px;
     color: #fcaf3b;
 }
+
 .social-details li a {
     display: flex;
     color: #2b2b2b;
 }
+
 .social-details li a p{
     font-weight: 500;
 }
+
 .social-details {
     transform: translateY(20px);
 }
+
 .from-control:focus,
-textarea:focus
-{
+textarea:focus{
     border-bottom: 1px solid #ccc;
     outline: none;
 }
