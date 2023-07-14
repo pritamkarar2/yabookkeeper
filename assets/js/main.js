@@ -1,6 +1,3 @@
-require("assets/js/page-links.js");
-require("assets/js/cookieconsent-init.js");
-
 let mybutton = document.getElementById("myBtn");
 
 // Sticky Header
@@ -27,20 +24,6 @@ function onScroll() {
 function backtoTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
-}
-
-function require(script) {
-  $.ajax({
-      url: script,
-      dataType: "script",
-      async: false,
-      success: function () {
-          console.log("Script loaded : " + script);
-      },
-      error: function () {
-          throw new Error("Could not load script : " + script);
-      }
-  });
 }
 
 $(document).ready(function() {
