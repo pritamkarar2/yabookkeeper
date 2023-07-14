@@ -1,7 +1,4 @@
-let mybutton = document.getElementById("myBtn");
-
-// Sticky Header
-window.onscroll = function() {onScroll()};
+let scrollToTopButton = document.getElementById("myBtn");
 
 var header = document.getElementById("header");
 var sticky = header.offsetTop;
@@ -14,9 +11,9 @@ function onScroll() {
   }
 
   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-    mybutton.style.display = "block";
+    scrollToTopButton.style.display = "block";
   } else {
-    mybutton.style.display = "none";
+    scrollToTopButton.style.display = "none";
   }
 }
 
@@ -31,6 +28,7 @@ $(document).ready(function() {
   $(".banner").css({'background-position-y' : ($(window).scrollTop()/20)+'%'});
   
   $(window).scroll(function() {
+    onScroll();
     $(".banner").css({'background-position-y' : ($(window).scrollTop()/20)+'%'});    
   });
   
