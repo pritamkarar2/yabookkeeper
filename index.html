@@ -27,10 +27,14 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="assets/css/responsive.css">
-  <script type="text/plain" data-cookiecategory="analytics">
-    console.log('"analytics" category accepted');
-  </script>
   <script defer src="./assets/js/page-links.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NWGJLLQY13"></script>
+  <script type="text/plain" data-cookiecategory="analytics">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-NWGJLLQY13');
+  </script>
 </head>
 
 <body>
