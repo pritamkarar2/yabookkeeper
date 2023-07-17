@@ -1,8 +1,8 @@
 const pageList = {
     "": "Home",
     "about": "About Us",
-    "service": "Services",
-    "solution": "Solutions",
+    "services": "Services",
+    "solutions": "Solutions",
     "contact": "Contact Us"
 };
 
