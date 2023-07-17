@@ -94,7 +94,7 @@ section{
 .banner{
     background-image: radial-gradient(
     rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)), url(../images/banner.jpg);
+    rgba(0, 0, 0, 0.5)), url(../images/banner.webp);
     min-height: calc(100vh - 122px);
     background-position: center;
     background-size: cover;
