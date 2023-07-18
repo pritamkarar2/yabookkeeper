@@ -17,19 +17,34 @@ function onScroll() {
   }
 }
 
-// When the user clicks on the button, scroll to the top of the document
 function backtoTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
 
-$(document).ready(function() {
-  
-  $(".banner").css({'background-position-y' : ($(window).scrollTop()/20)+'%'});
-  
-  $(window).scroll(function() {
+$.fn.isInViewport = function() {
+  var elementTop = $(this).offset().top;
+  var elementBottom = elementTop + $(this).outerHeight();
+
+  var viewportTop = $(window).scrollTop();
+  var viewportBottom = viewportTop + $(window).height();
+
+  return elementBottom > viewportTop && elementTop < viewportBottom;
+};
+
+$(document).ready(function () {
+  if ($('section:nth-of-type(2)').isInViewport()) $('section:nth-of-type(2)').animate({ 'opacity': '1' }, 500);
+
+  $(".banner").css({ 'background-position-y': ($(window).scrollTop() / 20) + '%' });
+
+  $(window).on("resize scroll", function () {
     onScroll();
-    $(".banner").css({'background-position-y' : ($(window).scrollTop()/10)+'%'});    
+
+    $(".banner").css({ 'background-position-y': ($(window).scrollTop() / 10) + '%' });
+
+    $('main > section').each(function () {      
+      if ($(this).isInViewport()) $(this).animate({ 'opacity': '1' }, 1000);
+    });
   });
-  
+
 });
