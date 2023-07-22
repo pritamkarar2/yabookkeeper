@@ -51,6 +51,7 @@
     gtag('js', new Date());
     gtag('config', 'G-NWGJLLQY13');
   </script>
+  <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 
 <body>
@@ -93,14 +94,15 @@
                 <div class="row">
                   <div class="col-lg-6">
                     <h4>Write Us</h4>
-                    <form class="gform" method="post"
+                    <form id="contactForm" class="gform" method="post"
                       action="https://script.google.com/macros/s/AKfycby8_ijgJ9aeTsV4rzGv_s1DBg4TOxQloknux2ux8Ku4fe4Iu29JI2vU5T7k6LRJC6-RUA/exec">
                       <input type="text" name="name" class="from-control w-100" placeholder="Name" autofocus required />
                       <input type="email" name="email" class="from-control w-100" placeholder="Email" required />
                       <textarea name="message" class="w-100" cols="30" rows="5" placeholder="Message"
                         required></textarea>
                       <div class="submit-button">
-                        <button type="submit" class="btn_2">Send Message</button>
+                        <button type="submit" class="btn_2 g-recaptcha" data-sitekey="6LfwbUUnAAAAAKytbZ8a1_zA2kyy7F6P4jJT4hu8"
+                          data-callback='onSubmit' data-action='submit'>Send Message</button>
                       </div>
                     </form>
                   </div>
@@ -110,7 +112,7 @@
                       <div class="social-details">
                         <ul>
                           <li>
-                            <a href="#">
+                            <a href="javascript:void(0)">
                               <span><i class="fa-solid fa-location-dot"></i></span>
                               <p><strong>Office</strong>: J-446 Garden Reach</p>
                             </a>
@@ -173,6 +175,11 @@
   <script defer src="./assets/js/cookieconsent-init.js"></script>
   <script src="assets/js/main.js"></script>
   <script data-cfasync="false" type="text/javascript" src="assets/js/send-mail.js"></script>
+  <script>
+    function onSubmit(token) {
+      document.getElementById("contactForm").submit();
+    }
+  </script>
 </body>
 
 </html>
